@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 247, 246, 243;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+[contenteditable]:empty:before {
+  content: attr(data-placeholder);
+  color: #999;
+  pointer-events: none;
+  display: block;
+} 
